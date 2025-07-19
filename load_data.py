@@ -3,8 +3,8 @@ import re
 from sklearn.preprocessing import MinMaxScaler
 import os
 
-RAW_DATA_PATH = 'CMAPSSData/train_FD001.txt'
-OUTPUT_PATH = 'CMAPSSData/train_FD001_cleaned.csv'
+RAW_DATA_PATH = 'CMAPSSData/train_FD002.txt'
+OUTPUT_PATH = 'CMAPSSData/train_FD002_cleaned.csv'
 NUM_SENSOR_COLS = 21
 
 def load_data(path):
