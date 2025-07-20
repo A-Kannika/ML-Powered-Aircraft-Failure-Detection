@@ -3,9 +3,9 @@ import re
 from sklearn.preprocessing import MinMaxScaler
 import os
 
-DATASETS = ['FD001', 'FD002', 'FD003', 'FD004']
-RAW_DATA_PATH = ''
-OUTPUT_PATH = ''
+RAW_DATA_PATH = 'CMAPSSData/train_FD001.txt'
+OUTPUT_PATH = 'CMAPSSData/train_FD001_cleaned.csv'
+NUM_SENSOR_COLS = 21
 
 def load_data(path):
     # Define column names
@@ -13,8 +13,6 @@ def load_data(path):
     df = pd.read_csv(path, sep=' ', header=None)
     df.drop(columns=[26, 27], inplace=True)
     df.columns = cols
-    # Create operating condition identifier
-    df['operating_condition'] = df[['op_set1', 'op_set2', 'op_set3']].astype(str).agg('_'.join, axis=1)
     return df
 
 def compute_rul(df):
@@ -29,25 +27,11 @@ def compute_rul(df):
     return df
 
 def normalize_features(df):
-    # feature_cols = ['cycle', 'op_set1', 'op_set2', 'op_set3'] + [f'sensor{i}' for i in range(1, 22)]
-    # scaler = MinMaxScaler()
-    # df[feature_cols] = scaler.fit_transform(df[feature_cols])
-    # print(df)
-    # return df
-
-    feature_cols = ['cycle'] + [f'sensor{i}' for i in range(1, 22)]
-
-    df_scaled = pd.DataFrame()
-    for condition in df['operating_condition'].unique():
-        subset = df[df['operating_condition'] == condition].copy()
-        scaler = MinMaxScaler()
-        subset[feature_cols] = scaler.fit_transform(subset[feature_cols])
-        df_scaled = pd.concat([df_scaled, subset])
-
-    df_scaled.sort_values(by=['engine_id', 'cycle'], inplace=True)
-    df_scaled.reset_index(drop=True, inplace=True)
-
-    return df_scaled
+    feature_cols = ['cycle', 'op_set1', 'op_set2', 'op_set3'] + [f'sensor{i}' for i in range(1, 22)]
+    scaler = MinMaxScaler()
+    df[feature_cols] = scaler.fit_transform(df[feature_cols])
+    print(df)
+    return df
 
 def process_and_save():
     df = load_data(RAW_DATA_PATH)
@@ -61,11 +45,5 @@ def process_and_save():
     print("Complete!!")
 
 if __name__ == "__main__":
-    for set_name in DATASETS:
-        RAW_DATA_PATH = f'CMAPSSData/train_{set_name}.txt'
-        OUTPUT_PATH = f'CMAPSSData/train_{set_name}_cleaned.csv'
-        process_and_save()
-        print(f'{set_name}')
 
-    for set_name in DATASETS:
-        print(pd.read_csv(f'CMAPSSData/train_{set_name}_cleaned.csv'))
+    process_and_save()

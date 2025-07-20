@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316ef99d-2878-433d-9a41-5ae40c7738b6" name="Changes" comment="Update: load_data">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMAPSSData/train_FD001_cleaned.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CMAPSSData/train_FD001_cleaned.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-    </list>
+    <list default="true" id="316ef99d-2878-433d-9a41-5ae40c7738b6" name="Changes" comment="Save the comparison of LSTM (Actual vs Predict)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +46,7 @@
     "Python.load_data.executor": "Run",
     "Python.load_data_backup.executor": "Run",
     "Python.model.executor": "Run",
+    "Python.model_test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/akannika/Documents/UWT/Jobs/Projects/ML-Powered-Aircraft-Failure-Detection",
@@ -113,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752991377265</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Save the comparison of LSTM (Actual vs Predict)">
+      <option name="closed" value="true" />
+      <created>1752992611199</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752992611199</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,6 +125,7 @@
     <MESSAGE value="Update model: Random Forest, XGBoost, and LSTM models" />
     <MESSAGE value="Update: load_data automate for all 4 datasets" />
     <MESSAGE value="Update: load_data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: load_data" />
+    <MESSAGE value="Save the comparison of LSTM (Actual vs Predict)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save the comparison of LSTM (Actual vs Predict)" />
   </component>
 </project>
