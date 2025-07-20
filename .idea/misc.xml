@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.10 (miniconda3ML-Powered-Aircraft-Failure-Detection)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (miniconda3ML-Powered-Aircraft-Failure-Detection)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="$PROJECT_DIR$/../../../MS/TCSS558/TCSS558_Project/miniconda3" project-jdk-type="Python SDK" />
 </project>
