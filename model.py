@@ -14,6 +14,7 @@ from keras.src.models import Sequential
 from keras.src.layers import BatchNormalization, Bidirectional
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.metrics import r2_score
+import matplotlib.pyplot as plt
 
 CLEANED_DATA_PATH = 'CMAPSSData/train_FD001_cleaned.csv'
 
@@ -106,7 +107,6 @@ def LSTM_model(input_shape):
     model.compile(optimizer='adam', loss='mse')
     return model
 
-import matplotlib.pyplot as plt
 def build_model_LSTM(df):
     print("===== LSTM =====")
     start = time.time()
