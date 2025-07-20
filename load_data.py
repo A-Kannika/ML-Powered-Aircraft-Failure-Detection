@@ -61,11 +61,11 @@ def process_and_save():
     print("Complete!!")
 
 if __name__ == "__main__":
-    # for set_name in DATASETS:
-    #     RAW_DATA_PATH = f'CMAPSSData/train_{set_name}.txt'
-    #     OUTPUT_PATH = f'CMAPSSData/train_{set_name}_cleaned.csv'
-    #     process_and_save()
-    #     print(f'{set_name}')
+    for set_name in DATASETS:
+        RAW_DATA_PATH = f'CMAPSSData/train_{set_name}.txt'
+        OUTPUT_PATH = f'CMAPSSData/train_{set_name}_cleaned.csv'
+        process_and_save()
+        print(f'{set_name}')
 
     for set_name in DATASETS:
         print(pd.read_csv(f'CMAPSSData/train_{set_name}_cleaned.csv'))

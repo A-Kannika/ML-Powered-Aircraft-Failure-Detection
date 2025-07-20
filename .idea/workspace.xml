@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316ef99d-2878-433d-9a41-5ae40c7738b6" name="Changes" comment="Update model: Random Forest, XGBoost, and LSTM models">
-      <change afterPath="$PROJECT_DIR$/load_data_automate.py" afterDir="false" />
+    <list default="true" id="316ef99d-2878-433d-9a41-5ae40c7738b6" name="Changes" comment="Update: load_data automate for all 4 datasets">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/miniconda3ML-Powered-Aircraft-Failure-Detection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/miniconda3ML-Powered-Aircraft-Failure-Detection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -99,12 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1752904269068</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update: load_data automate for all 4 datasets">
+      <option name="closed" value="true" />
+      <created>1752991035629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752991035629</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="load and clean CMAPSSData" />
     <MESSAGE value="Update model: Random Forest, XGBoost, and LSTM models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update model: Random Forest, XGBoost, and LSTM models" />
+    <MESSAGE value="Update: load_data automate for all 4 datasets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: load_data automate for all 4 datasets" />
   </component>
 </project>
